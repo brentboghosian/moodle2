@@ -490,6 +490,13 @@ function profile_save_data($usernew) {
             $formfield = new $newfield($field->id, $usernew->id);
             $formfield->edit_save_data($usernew);
         }
+        $event = \core\event\user_profile_fields_updated::create(
+            array(
+                'objectid' => $usernew->id,
+                'context' => context_user::instance($usernew->id)
+                )
+            );
+        $event->trigger();
     }
 }
 
