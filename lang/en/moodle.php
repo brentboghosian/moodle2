@@ -728,6 +728,7 @@ $string['eventusercreated'] = 'User created';
 $string['eventuserdeleted'] = 'User deleted';
 $string['eventuserlistviewed'] = 'User list viewed';
 $string['eventuserloggedout'] = 'User logged out';
+$string['eventuserprofilefieldsupdated'] = 'User profile field(s) updated';
 $string['eventuserprofileviewed'] = 'User profile viewed';
 $string['eventuserupdated'] = 'User updated';
 $string['everybody'] = 'Everybody';
